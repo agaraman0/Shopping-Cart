@@ -57,7 +57,10 @@
                     <h3>Categories</h3>
                     <ul class="list-group">
                         <li class="list-group-item"><a href="/products">All products</a></li>
-                        
+                        <% categories.forEach(function(c){ %>
+                          <%  if (c.active) { %>
+                            <li class="list-group-item"><a href="/products/<%= c.slug %>"><%= c.title %></a></li>
+                        <% }}); %>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-md-1"></div>
