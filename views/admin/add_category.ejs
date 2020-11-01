@@ -1,0 +1,25 @@
+<%- include('../_layouts/adminheader') %>
+
+<h2 class="page-title">Add a category</h2>
+<a href="/admin/categories" class="btn btn-primary">Back to all categories</a>
+<br><br>
+
+<form method="post" action="/admin/categories/add-category">
+    
+    <div class="form-group">
+        <label for="">Title</label>
+        <input type="text" class="form-control" name="title" value="<%= title %>" placeholder="Title">
+    </div>
+    
+    <div class="form-group">
+        <label for="">Active Status</label>
+        <select name="active" class="form-control">
+                <option value="true">True</option>
+                <option value="false">False</option>
+        </select>
+    </div>
+
+    <button class="btn btn-default">Submit</button>
+</form>
+
+<%- include('../_layouts/adminfooter') %>
