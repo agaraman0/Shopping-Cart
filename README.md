@@ -1,5 +1,5 @@
 
-# demoapp
+# Shopping Cart
 
-A demo crud app for products and categories
+A Shopping CRUD app for products and categories
 
